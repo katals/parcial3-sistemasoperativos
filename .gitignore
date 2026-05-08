@@ -1,0 +1,22 @@
+# Compiled binary
+editor
+
+# Object files and dependency files
+*.o
+*.d
+
+# Temporary and crash artifacts
+core.*
+vgcore.*
+*.dSYM/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Optional run outputs
+*.log
