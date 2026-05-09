@@ -31,7 +31,9 @@ void editor_destroy(Editor *ed) {
 }
 
 static bool parse_command(const char *buf, size_t len) {
-    return (len == 3 && buf[0] == ':' && buf[1] == 'w' && buf[2] == 'q');
+    // Al presionar ':' ya entramos en modo comando, 
+    // así que el buffer solo contiene 'w' y 'q'.
+    return (len == 2 && buf[0] == 'w' && buf[1] == 'q');
 }
 
 bool editor_save(Editor *ed) {

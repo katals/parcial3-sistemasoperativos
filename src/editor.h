@@ -38,5 +38,6 @@ bool editor_load(Editor *ed);
 
 /** Renderiza estado mínimo en terminal (para feedback visual) */
 void editor_render_status(const Editor *ed);
+void editor_render(Editor *ed);
 
 #endif /* EDITOR_H */
